@@ -1,0 +1,109 @@
+*{
+    padding:0px;
+}
+body{
+    width:1340px;
+    margin:20px auto;
+}
+.box_container{
+    /*width:65%;*/
+    position: relative;
+    float:left;
+    margin-left:10px;
+    margin-top:20px;
+}
+.box_table{
+    border-collapse:collapse;
+    float:left;
+}
+td.box_td{
+    width:36px;
+    height:36px;
+    text-align: center;
+    font-family: '黑体';
+}
+.box_tds{
+    border:1px solid #BDC3C7;
+    width:36px;
+    height:36px;
+}
+.box_img{
+    padding: 0;
+    margin:0;
+    position:absolute;
+    width:36px;
+    height:36px;
+    top:37px;
+    left:37px;
+    transition:all .5s;
+}
+.run_box{
+    width:36px;
+    height:36px;
+}
+/*控制小方块如何操作的部分*/
+.controls{
+    float:left;
+    /*width:33%;*/
+    margin-left:10px;
+    margin-top:20px;
+}
+
+#select_file{
+    width:155px;
+    float:right;
+}
+
+.box_console{
+    margin-top:10px;
+    overflow:hidden;
+}
+.note{
+    margin-top: 20px;
+    color: #999;
+    float:left;
+}
+
+.console_lines_wrapper{
+    border-radius: 4px 0 0 4px;
+    background-color: #2c3e50;
+    width: 40px;
+    height:800px;
+    font-size: 12px;
+    text-align: right;
+    padding-top: 5px;
+    box-sizing: border-box;
+    float:left;
+}
+.console_lines{
+    position: relative;
+}
+.console_lines_item{
+    padding-right: 5px;
+    color:white;
+    height:13px;
+    margin-top:3px;
+    font-size: 13px;
+}
+.console_editor{
+    font-size: 16px;
+    line-height: 16px;
+    width: 395px;
+    height:800px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    padding: 5px;
+    background-color: #34495e;
+    resize: none;
+    color: white;
+    z-index:100;
+}
+#drawing{
+    border:1px solid yellow;
+    position:absolute;
+    left:36px;
+    top:36px;
+    /*background-color:blue;*/
+}
