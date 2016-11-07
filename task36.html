@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>听指令的小方块</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class='body'>
+    <div class="box_container">
+        <!--<canvas id="drawing" width="200" height="200"></canvas>-->
+        <table class="box_table"></table>
+        <div class="box_img">
+            <img src="bot.png" class="run_box">
+        </div>
+
+    </div>
+    <div class="controls">
+        <div class="controls_button">
+            <select class="box_num">
+                <option >20x20</option>
+                <option>30x30</option>
+                <option>40x40</option>
+            </select>
+            <select class="box_speed">
+                <option >慢速</option>
+                <option selected="selected">常速</option>
+                <option>快速</option>
+                <option>极速</option>
+            </select>
+            <input type="button" value="运行" id="operator">
+            <input type="button" value="重置" id="reset">
+            <input type="button" value="随机修墙" id="random_create">
+            <input type="file" value="请选择文件" id="select_file">
+        </div>
+        <div class="box_console">
+            <div class="console_lines_wrapper">
+                <div class="console_lines">
+                    <!--<div class="console_lines_item">1</div>-->
+                </div>
+            </div>
+            <textarea title="命令编辑器" class="console_editor" spellcheck="false"></textarea>
+
+        </div>
+    </div>
+    <p class="note"><em>注：选择图片文件后，程序会读取图片并生成绘图命令，接着运行命令，机器人将一步一步地把图形画出来</em></p>
+
+
+<script src="box.js"></script>
+<script src="create_wall.js"></script>
+<script src="box_run.js"></script>
+<script src="img_read.js"></script>
+</body>
+</html>
